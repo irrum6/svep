@@ -1,0 +1,14 @@
+every datasource is identified with @symbol.
+
+fully qualified syntax is the following
+
+@databasename::namespace::tablename
+
+partial syntax:
+@namespace::tablename
+database is then implied from session context. if not, error is thrown.
+no global databasename is set or can be set.
+
+table syntax:
+@tablename
+database and namespace are then implied from session context. if not, error is thrown.

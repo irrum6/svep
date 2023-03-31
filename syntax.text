@@ -1,0 +1,33 @@
+Query is constructed with following syntax;
+
+($#*!)operation($#*!) @id [criteria] {limit};
+
+; is terminator of the statement.
+
+each token can be placed differently, their place makes no difference
+
+each ddl and dml operation, except drop and delete which don't have paramets (criteria is handled separatelly) embedds its parameters within itself
+
+for example reading name and personal id number (pid) from table Students takes following form;
+
+$ name, pid $ @students;
+
+As we said earlier tokens can be rearanged so the following is also valid.
+
+@students $ name, pid $ ;
+
+if we want to narrow search to people born after 2000 then it will look like the following
+
+@students [birth_year > 2000]  $ name, pid $ ;
+
+applying {limit} of 100 records
+
+{100} @students [birth_year > 2000]  $ name, pid $ ;
+
+@id is already has common use.
+
+[] is taken form css attribute 
+
+{} is from regex.
+
+most of these symbol constructs are alrady in usage by tech, reusing them in query language make a sense.
