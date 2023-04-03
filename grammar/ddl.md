@@ -31,6 +31,10 @@ rename personalid to pid
 *table personalid->pid *table @students;
 more changes with one command
 *t personalid->pid, -birth_year t* @students;
+add column
++age:int
+more changes with one command
+*t personalid->pid, -birth_year,+age:int t* @students;
 -----
 remove table
 
