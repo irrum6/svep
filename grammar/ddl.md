@@ -20,6 +20,10 @@ alternate
 
 #table tablename | fieldname:datatype:constraint, fieldname:datatype:constraint table#
 
+alternate
+
+#table tablename, fieldname:datatype:constraint, fieldname:datatype:constraint t#
+
 ------
 alter table
 *t t*
@@ -41,14 +45,14 @@ remove table
 !tt! @tablename
 !table!  @tablename
 ------
-create namespace
+add namespace
 ------
 rename namespace
 ------
 remove namespace
 ------
-crate database
+add database
 ------
-alter database
+change database
 ------
 remove database
