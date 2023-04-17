@@ -1,0 +1,7 @@
+words used to set working(also refered as current) database/namespace/table in the current session;
+
+provided user has granted access to
+
+wd / wdb - sets working database.
+wn / wns - sets working namespace.
+wt / wtb - sets working table.
