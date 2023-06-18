@@ -64,8 +64,10 @@ remove table
 add namespace
 ------
 rename namespace
+*n oldname -> newname n* @database;
 ------
 remove namespace
+!n namespace n! @database;
 ------
 add database
 ------
