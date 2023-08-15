@@ -11,11 +11,11 @@ names = $ name$ @shop ;
 
 -- Variables
 
-x = value;
+let x = value;
 
 examples:
 
-x = 5;
+let x = 5;
 
 this x  then can be resolved by ? operator
 

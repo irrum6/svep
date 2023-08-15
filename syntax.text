@@ -29,5 +29,3 @@ applying {limit} of 100 records
 [] is taken form css attribute 
 
 {} is from regex.
-
-most of these symbol constructs are alrady in usage by tech, reusing them in query language make a sense.
